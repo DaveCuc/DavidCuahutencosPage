@@ -142,3 +142,39 @@ body {
   from {opacity: .4}
   to {opacity: 1}
 }
+
+/* Sprite */
+
+#bg-face {
+  width: 288px;
+  height: 288px;
+  background: url("css_sprites.png") -10px -10px;
+  
+}
+  
+#bg-facec {
+  width: 267px;
+  height: 267px;
+  background: url("css_sprites.png") -10px -318px;
+}
+
+#bg-ig {
+  width: 266px;
+  height: 266px;
+  background: url("css_sprites.png") -297px -318px;
+}
+#bg-igc {
+  width: 252px;
+  height: 252px;
+  background: url("css_sprites.png") -616px -291px;
+}
+#bg-yutu {
+  width: 278px;
+  height: 278px;
+  background: url("css_sprites.png") -318px -10px;
+}
+#bg-yutuc {
+  width: 261px;
+  height: 261px;
+  background: url("css_sprites.png") -616px -10px;
+}
