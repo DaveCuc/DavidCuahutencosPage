@@ -1,31 +1,70 @@
 td img {
     width: 150px;
   }
+
+  /*primer estilo aplciado*/
 h1{
     color: #261da5;
     font-style: black;
     text-align: center;
     text-transform: uppercase; 
-    font-size: xxx-large;
+    font-size: xx-large;
 }
+/*segundo estilo aplicado*/
 h2{
     color: rgb(0, 0, 0);
     text-transform: uppercase;
-    font-size: xx-large; 
+    font-size: x-large; 
 
 
 }
+/*tercer estilo aplicado*/
 h3{
-    color: #474747;
+    color: #00640d;
     font-style: italic;
     text-align: center;
+    font-size: x-large;
+    letter-spacing: 10px;
 
 }
+
+/*-----------------------------------------------------------------------------------------------------------------------------------*/
+/* Estilos Tablas */
+td {
+  font-size: medium;
+  font-weight: normal;
+}
+
+#fomr, #form td {
+  font-size: medium;
+  font-weight: bold;
+  text-transform: capitalize;
+  color:#585858;
+
+}
+
+#miTabla, #miTabla th, #miTabla td {
+  border: 1px solid black;
+  border-collapse: collapse;
+  font-size: large;
+  
+}
+
+#miTabla th:nth-child(even), #miTabla td:nth-child(even) {
+  background-color: #bfbfbf65;
+  font-style: italic;
+  font-weight: bold;
+}
+
+
+/*-----------------------------------------------------------------------------------------------------------------------------------*/
+/*Varios estilos*/
 #nuestro_estilo{
   color: #404040;
   font-size: medium;
 
 }
+/*Titulo enorme*/
 #mi_estilo{
     color: #000000;
     font-style:normal ;
@@ -33,14 +72,17 @@ h3{
     text-transform: uppercase;
     font-weight: bold;
     font-size: xxx-large;
+    letter-spacing: 2px;   
 
 }
 #estilo1{
-    color: #01007D;
-    font-weight: bold;
+  color: #000764;
+  font-weight: normal;
     text-align: center;
-    text-transform: capitalize;
-    
+    text-transform: uppercase;
+    letter-spacing: 8px;   
+
+
     
 }
 #estilo2{
@@ -55,6 +97,9 @@ hr herf{
     color: rgb(0, 0, 0);
 
 }
+
+/*-----------------------------------------------------------------------------------------------------------------------------------*/
+/*estilos de el fondo*/
 body {
     background-color: #01007D; /* Color de fondo azul */
     color: black; /* Color del texto general */
@@ -69,9 +114,12 @@ body {
     margin: 20px; /* Margen externo opcional */
 }
 
-/* Otros estilos como antes... */
+
+/*-----------------------------------------------------------------------------------------------------------------------------------*/
 
 
+
+/* estilos de las fotografias */
 * {box-sizing:border-box}
 
 /* Slideshow container */
@@ -101,12 +149,6 @@ body {
   border-radius: 0 3px 3px 0;
   user-select: none;
 }
-
-
-
-
-
-
 
 /* Position the "next button" to the right */
 .next {
@@ -166,6 +208,7 @@ body {
   to {opacity: 1}
 }
 
+/*-----------------------------------------------------------------------------------------------------------------------------------*/
 /* Sprite */
 
 #bg-face {

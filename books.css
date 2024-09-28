@@ -1,7 +1,7 @@
 books{
 	display:	block;
 	width:		100%;
-	background-color:	gray;
+	background-color:	rgba(128, 128, 128, 0.596);
 	background-position:	80% 10px;
 	margin:			0;
 	font-family:		verdana,Geneva,arial
@@ -9,7 +9,7 @@ books{
 
 book{
 	display:	block;
-	background-color:	silver;
+	background-color:	#261da5;
 	width:			50%;
 	margin-bottonm:		20px;
 	margin-top:		15px;
@@ -18,13 +18,14 @@ book{
 
 author, publisher, price, contentType, isbn {
 	display:	block;
-	background-color:	#ffe4c4;
+	background-color:	#ffffff;
 	font-size:		x-small;
 	padding:		2px;
 }
 
 title{
 	display:		block;
-	color:			marron;
+	color:			white;
 	font-size:		medium;
+	font-weight: bold;
 }
