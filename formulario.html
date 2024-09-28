@@ -1,0 +1,76 @@
+<html>
+    <head>
+        <title>Formulario de alumnos</title>
+        <link rel="stylesheet" type="text/css" href="styles.css">
+        <body bgcolor="black" text="white" align="center">
+            <h1>Formulario de alumnos</h1>
+        </body>
+
+        <form action="formulario.html">
+            
+            <table border="3" align="center">
+                <tr>
+                    <td>N.C: </td>
+                    <td><input type="text" name="NC"></td>
+                    
+                </tr>
+                <tr>
+                    <td>Password: </td>
+                    <td><input type="password" name="pass"></td>
+                    
+                </tr>
+                <tr>
+                    <td>Nombre: </td>
+                    <td><input type="text" name="Nom"></td>
+                </tr>
+                <tr>
+                    <td>Especialidad:</td>
+                   <!--<td> <input type="text" name="ESP"></td>--> 
+                   <td>
+                        <select name="esp">
+                            <option value="1">Ing. en Sistemas Computacionales</option>
+                            <option value="2">Ing. Civil</option>
+                            <option value="3">Ing. Electronica</option>
+                            <option value="4">Ing. Mecatronica</option>
+                            <option value="5">Ing. Logistica</option>
+                            <option value="6">Ing. Bioquimica</option>
+                            <option value="7">Ing. Biomedica</option>
+                            <option value="8">Ing. Industrial</option>
+                            <option value="9">Ing. Gestion Empresarial</option>
+                            <option value="10">Lic. Administracion de empresas </option>
+                            <option value="1">Contador Publico</option>
+                        </select>
+                   </td>
+                </tr>
+                <tr>
+                    <td>Genero: </td>
+                    
+                        <td><input type="radio" name="gen" value="1">Hombre
+                            <input type="radio" name="gen" value="2">Mujer
+                            <input type="radio" name="gen" value="3">Gay</td>
+                    
+                                        
+                </tr>
+                <tr>
+                    <td>Fecha de Nacimiento: </td>
+                    <td><input type="text" name="date"></td>
+
+                </tr>
+                <tr>
+                    <td>Fecha de Registro: </td>
+                    <td><input type="text" name="reg"></td>
+                </tr>
+                <tr>
+                    <td>Comentarios y sugerencias</td>
+                    <td><textarea name=" comenta" rows="5" cols="25">Escriba sus comentarios...</textarea></td>
+                </tr>
+                <tr>
+                    <td>Reprobo almenos una materia?</td>
+                    <td><input type="checkbox"></td>
+                </tr>
+            </table>
+            <button type="submit" class="button">Guardar</button>
+        </form>
+        
+    </head>
+</html>

@@ -1,0 +1,25 @@
+h1{
+    color: #12b8ff;
+    font-style: black;
+    text-align: center;
+}
+h2{
+    color: aquamarine;
+}
+h3{
+    color: #ebffff;
+    font-style: italic;
+    text-align: center;
+}
+#mi_estilo{
+    color: #5e7085;
+    font-style:normal ;
+    text-align: right;
+    text-transform: uppercase;
+}
+.nuestro_estilo{
+    color: blanchedalmond;
+    font-style: italic;
+    text-align: left;
+    text-transform: capitalize;
+}

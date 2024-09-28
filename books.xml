@@ -1,0 +1,49 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/css" href="books.css"?>
+
+<books>
+	<book>
+		<title>Kamasutra</title>
+		<author>desconocido</author>
+		<publisher>Trilla</publisher>
+		<price>$300.00</price>
+		<contentType>Educativo</contentType>
+		<isbn>123456789</isbn>
+	</book>
+
+	<book>
+	    <title>To Kill a Mockingbird</title>
+	    <author>Harper Lee</author>
+	    <publisher>J.B. Lippincott &amp; Co.</publisher>
+	    <price>$10.99</price>
+	    <contentType>Fiction</contentType>
+	    <isbn>978-0061120084</isbn>
+	</book>
+	
+	<book>
+	    <title>1984</title>
+	    <author>George Orwell</author>
+	    <publisher>Secker y Warburg</publisher>
+	    <price>9.99</price>
+	    <contentType>Dystopian</contentType>
+	    <isbn>978-0451524935</isbn>
+	</book>
+	
+	<book>
+	    <title>Harry Potter and the Philosopher's Stone</title>
+	    <author>J.K. Rowling</author>
+	    <publisher>Bloomsbury</publisher>
+	    <price>12.99</price>
+	    <contentType>Fantasy</contentType>
+	    <isbn>978-0747532699</isbn>
+	</book>
+
+	<book>
+	    <title>The Great Gatsby</title>
+	    <author>F. Scott Fitzgerald</author>
+	    <publisher>Charles Scribner's Sons</publisher>
+	    <price>10.99</price>
+	    <contentType>Fiction</contentType>
+	    <isbn>978-0743273565</isbn>
+	</book>
+</books>
