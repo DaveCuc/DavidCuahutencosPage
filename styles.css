@@ -5,30 +5,47 @@ h1{
     color: #261da5;
     font-style: black;
     text-align: center;
+    text-transform: uppercase; 
+    font-size: xxx-large;
 }
 h2{
     color: rgb(0, 0, 0);
+    text-transform: uppercase;
+    font-size: xx-large; 
+
+
 }
 h3{
-    color: #148d10;
+    color: #474747;
     font-style: italic;
     text-align: center;
+
+}
+#nuestro_estilo{
+  color: #404040;
+  font-size: medium;
+
 }
 #mi_estilo{
-    color: #021020;
+    color: #000000;
     font-style:normal ;
-    text-align: left;
+    text-align: center;
     text-transform: uppercase;
     font-weight: bold;
+    font-size: xxx-large;
+
 }
-.nuestro_estilo{
-    color: blanchedalmond;
-    font-style: italic;
-    text-align: left;
+#estilo1{
+    color: #01007D;
+    font-weight: bold;
+    text-align: center;
     text-transform: capitalize;
+    
+    
 }
 #estilo2{
-    color: #03172e;
+  color: #404040;
+  font-size: medium;
     font-style:normal ;
     text-align: left;
     font-weight: bold;
@@ -84,6 +101,12 @@ body {
   border-radius: 0 3px 3px 0;
   user-select: none;
 }
+
+
+
+
+
+
 
 /* Position the "next button" to the right */
 .next {
