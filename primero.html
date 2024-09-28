@@ -1,54 +1,182 @@
 <html>
 
 	<head>
-		<title>Bienvenidos a mi pagina</title>
+		<title>Bienvenidos a mi página web</title>
 		<link rel="stylesheet" type="text/css" href="styles.css">	
 
 	</head>
 
-	<body bgcolor=" #313c47" text="white">
+	<body>
+		<hr>
+		<div class="fondo-blanco">
+
 		<center>
 			<table border="0" >
 				<tr>
-					<td><A href="www.tecnm.com.mx"><img src="Google.png"></A></td>
+					<td><A href="https://www.tecnm.mx/"><img src="tec1x1.png"></A></td>
 					<td align="center">
-						<h1>Tecnologico Nacional de Mexico</h1>
-						<h2>Instituto Tecnologico de Tehuacan</h2>
-						<h3>Programacion Web</h3>
+						<h1>Tecnológico Nacional de México</h1>
+						<h2>Instituto Tecnológico de Tehuacán</h2>
+						<h3>Programación Web</h3>
+
 					</td>
-					<td><img src="edge.png"></td>
+					<td><A href="http://www.ittehuacan.edu.mx/"><img src="itt.jpg" ></A></td>
 				</tr>
 			</table>
 			
 
 		</center>
+	</div>
+
+		<!-- photo_slider -->
+		<hr>
+		<div class="fondo-blanco">
+			<div class="slideshow-container">
+
+				<!-- Full-width images with number and caption text -->
+				<div class="mySlides fade">
+				  <div class="numbertext">1 / 3</div>
+				  <img src="1.jpg" style="width:100%">
+				  <div class="text">TCNM Veracruz</div>
+				</div>
+			  
+				<div class="mySlides fade">
+				  <div class="numbertext">2 / 3</div>
+				  <img src="2.jpg" style="width:100%">
+				  <div class="text">☝🏻</div>
+				</div>
+			  
+				<div class="mySlides fade">
+				  <div class="numbertext">3 / 3</div>
+				  <img src="3.jpg" style="width:100%">
+				  <div class="text">ING. SCP</div>
+				</div>
+				<div class="mySlides fade">
+					<div class="numbertext">4 / 10</div>
+					<img src="4.jpg" style="width:100%">
+					<div class="text">Inges 1</div>
+				</div>
+			
+				<div class="mySlides fade">
+					<div class="numbertext">5 / 10</div>
+					<img src="5.jpg" style="width:100%">
+					<div class="text">Inges 2</div>
+				</div>
+			
+				<div class="mySlides fade">
+					<div class="numbertext">6 / 10</div>
+					<img src="6.jpg" style="width:100%">
+					<div class="text">Inges 3</div>
+				</div>
+			
+				<div class="mySlides fade">
+					<div class="numbertext">7 / 10</div>
+					<img src="7.jpg" style="width:100%">
+					<div class="text">Inges 4</div>
+				</div>
+			
+				<div class="mySlides fade">
+					<div class="numbertext">8 / 10</div>
+					<img src="8.jpg" style="width:100%">
+					<div class="text">Litzyxd</div>
+				</div>
+			
+				<div class="mySlides fade">
+					<div class="numbertext">9 / 10</div>
+					<img src="9.jpg" style="width:100%">
+					<div class="text">The Papus</div>
+				</div>
+			
+				<div class="mySlides fade">
+					<div class="numbertext">10 / 10</div>
+					<img src="10.jpg" style="width:100%">
+					<div class="text">Abueloxd</div>
+				</div>
+			  
+				<!-- Next and previous buttons -->
+				<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+				<a class="next" onclick="plusSlides(1)">&#10095;</a>
+			  </div>
+			  <br>
+			  
+			  <!-- The dots/circles -->
+			  <div style="text-align:center">
+				<span class="dot" onclick="currentSlide(1)"></span>
+				<span class="dot" onclick="currentSlide(2)"></span>
+				<span class="dot" onclick="currentSlide(3)"></span>
+			  </div>
+			  <script>
+				let slideIndex = 1;
+				showSlides(slideIndex);
+				
+				function plusSlides(n) {
+				  showSlides(slideIndex += n);
+				}
+				
+				function currentSlide(n) {
+				  showSlides(slideIndex = n);
+				}
+				
+				function showSlides(n) {
+				  let i;
+				  let slides = document.getElementsByClassName("mySlides");
+				  let dots = document.getElementsByClassName("dot");
+				  if (n > slides.length) {slideIndex = 1}    
+				  if (n < 1) {slideIndex = slides.length}
+				  for (i = 0; i < slides.length; i++) {
+					slides[i].style.display = "none";  
+				  }
+				  for (i = 0; i < dots.length; i++) {
+					dots[i].className = dots[i].className.replace(" active", "");
+				  }
+				  slides[slideIndex-1].style.display = "block";  
+				  dots[slideIndex-1].className += " active";
+				}
+				</script>
+
+
+
+
+
+		</div>
+		
+
+
 
 		<hr>
 
-		<div id="mi_estilo">Bienvenido a mi Pagina</div>
-		<div id="nuestro_estilo"><p>Mi nombre es <u>Jose David Cuahutencos Pena</u> y estudio la asignatura de <b>programacion web</b>. En esta pagina 
-		se abordaran temas relacionados <i>a la web, a las bases de datos,xml,css,php,</i>etc.</p></div>
-		
-		<p>Las carreras que ofrece el Instituto Tecnologico de Tehuacan son: </p>
+		<div class="fondo-blanco">
 
+		<div id="mi_estilo">Bienvenido a mi Página Web</div>
+
+		<div id="nuestro_estilo">
+			<p>Mi nombre es <u>José David Cuahutencos Peña</u> y estudio la asignatura de <b>programación web</b>. En esta página 
+			se abordarán temas relacionados <i>a la web, a las bases de datos, XML, CSS, PHP,</i> etc.</p>
+		</div>
+		
+		<div id="estilo2">
+			<p>Las carreras que ofrece el Instituto Tecnológico de Tehuacán son:</p>
+		</div>
+		
 			<ol>
 
-				<li>Ingenieria en Sistemas Computacionales</li>
-				<li>Ingenieria Industrial</li>
-				<li>Ingenieria Civil</li>
-				<li>Ingenieria Mecatronia</li>
-				<li>Ingenieria Biomedica</li>
-				<li>Ingenieria Electronica</li>
-				<li>Ingenieria en Gestion Empresarial</li>
-				<li>Ingenieria Logistica</li>
-				<li>Lic. en Administracion</li>
-				<li>Contador Publico</li>
+				<li>Ingeniería en Sistemas Computacionales</li>
+				<li>Ingeniería Industrial</li>
+				<li>Ingeniería Civil</li>
+				<li>Ingeniería Mecatrónica</li>
+				<li>Ingeniería Biomédica</li>
+				<li>Ingeniería Electrónica</li>
+				<li>Ingeniería en Gestión Empresarial</li>
+				<li>Ingeniería Logística</li>
+				<li>Ingeniería Bioquímica</li>
+				<li>Lic. en Administración</li>
+				<li>Contador Público</li>
 
 
 			</ol>
 
 			<center>
-			<table border="0">
+			<table border="1">
 
 				<tr>
 					<th>NC</th>
@@ -56,79 +184,97 @@
 					<th>Especialidad</th>
 					<th>Semestre</th>
 				</tr>
-
+				
 				<tr>
 					<td>21360939</td>
-					<td>Jose David Cuahutencos Pena</td>
-					<td>Ingenieria en Sistemas Computacionales</td>
+					<td>José David Cuahutencos Peña</td>
+					<td>Ingeniería en Sistemas Computacionales</td>
 					<td>7</td>
 				</tr>
 				<tr>
 					<td>21360918</td>
-					<td>Cristpher Daniel Aquino Perez</td>
-					<td>Ingenieria Industrial</td>
+					<td>Cristpher Daniel Aquino Pérez</td>
+					<td>Ingeniería Industrial</td>
 					<td>7</td>
 				</tr>
 				<tr>
 					<td>21360974</td>
-					<td>Brian Lemuel Leon Vazquez</td>
-					<td>Ingenieria Electronica</td>
+					<td>Brian Lemuel León Vázquez</td>
+					<td>Ingeniería Civil</td>
 					<td>7</td>
 				</tr>
 				<tr>
 					<td>21360950</td>
 					<td>Jason Roberto Gandarillas Castilla</td>
-					<td>Ingenieria Bioquimica</td>
+					<td>Ingeniería Mecatrónica</td>
 					<td>7</td>
 				</tr>
 				<tr>
-					<td>21360974</td>
-					<td>Brian Lemuel Leon Vazquez</td>
-					<td>Ingenieria en Gestion </td>
+					<td>21361010</td>
+					<td>Litzy Janely Pérez Salazar</td>
+					<td>Ingeniería Biomédica</td>
 					<td>7</td>
 				</tr>
 				<tr>
-					<td>#####</td>
-					<td>####</td>
-					<td>Ingenieria Mecatronica</td>
+					<td>21360991</td>
+					<td>Evelyn Montiel Hernández</td>
+					<td>Ingeniería Electrónica</td>
 					<td>7</td>
 				</tr>
 				<tr>
-					<td>#####</td>
-					<td>####</td>
-					<td>Ingenieria Mecatronica</td>
+					<td>21361007</td>
+					<td>Jafet Antonio Pérez Morales</td>
+					<td>Ingeniería en Gestión Empresarial</td>
 					<td>7</td>
 				</tr>
 				<tr>
-					<td>#####</td>
-					<td>####</td>
-					<td>Ingenieria Mecatronica</td>
+					<td>21360943</td>
+					<td>Santiago Domínguez Agustín</td>
+					<td>Ingeniería Logística</td>
 					<td>7</td>
 				</tr>
 				<tr>
-					<td>#####</td>
-					<td>####</td>
-					<td>Ingenieria Mecatronica</td>
+					<td>21360966</td>
+					<td>Ángel Daniel Hernández García</td>
+					<td>Ingeniería Bioquímica</td>
 					<td>7</td>
 				</tr>
 				<tr>
-					<td>#####</td>
-					<td>####</td>
-					<td>Ingenieria Mecatronica</td>
+					<td>21360938</td>
+					<td>José Miguel Cortés Flores Alias Chamo</td>
+					<td>Lic. en Administración</td>
 					<td>7</td>
 				</tr>
-
+				
 			</table>
 		</center>
+<br>
+	</div>
+		<hr>
+		<div class="fondo-blanco">
+			<center>
+				<a href="formulario.html"><img src="form.jpg" width="100" alt="Formulario"></a>
+				<br>
+				<a href="formulario.html">Click para ir a la página de Formularios</a>
+				<br>
+				
+				
+			</center>
+<!--			<a href="https://www.tecnm.mx/">Ir al portal del TECNM</a>-->
+				<br>
+			<table border="0">
+				<tr>
+					<td><a href="https://www.tecnm.mx/"><img src="tecnm.png" > </a>
+						</td>
+						<td>
+							<td><A href="http://www.ittehuacan.edu.mx/"><img src="itt.jpg" ></A></td>
 
-		<A href="formulario.html">Click para ir a la pagina de Formularios</A>
-		<br>
-		<A href="http:www.tecnm.mx">ir al portal del TECNM</A>
-		<br>
-		<A href="formulario.html">
-			<img src="edge.png">
-		</A>
+						</td>
+				</tr>
+			</table>
 
+
+			
+		</div>
 	</body>
-
-</html>
+	</html>

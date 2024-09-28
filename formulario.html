@@ -2,13 +2,25 @@
     <head>
         <title>Formulario de alumnos</title>
         <link rel="stylesheet" type="text/css" href="styles.css">
-        <body bgcolor="black" text="white" align="center">
-            <h1>Formulario de alumnos</h1>
+        
+        <hr>
+        <body background="white" text="black" align="center">
+            <div class="fondo-blanco">
+
+            <h1>Formulario de Alumnos</h1>
+            </div>
         </body>
 
         <form action="formulario.html">
             
-            <table border="3" align="center">
+            <hr>
+            <div class="fondo-blanco">
+
+            <br>
+            <img src="form.jpg" width="100">
+            <br>
+            <br>
+            <table border="0" align="center">
                 <tr>
                     <td>N.C: </td>
                     <td><input type="text" name="NC"></td>
@@ -27,19 +39,21 @@
                     <td>Especialidad:</td>
                    <!--<td> <input type="text" name="ESP"></td>--> 
                    <td>
-                        <select name="esp">
-                            <option value="1">Ing. en Sistemas Computacionales</option>
-                            <option value="2">Ing. Civil</option>
-                            <option value="3">Ing. Electronica</option>
-                            <option value="4">Ing. Mecatronica</option>
-                            <option value="5">Ing. Logistica</option>
-                            <option value="6">Ing. Bioquimica</option>
-                            <option value="7">Ing. Biomedica</option>
-                            <option value="8">Ing. Industrial</option>
-                            <option value="9">Ing. Gestion Empresarial</option>
-                            <option value="10">Lic. Administracion de empresas </option>
-                            <option value="1">Contador Publico</option>
-                        </select>
+                    <select name="esp">
+                        <option value="1">Escoge un Área</option>
+                        <option value="2">Ing. en Sistemas Computacionales</option>
+                        <option value="3">Ing. Civil</option>
+                        <option value="4">Ing. Electrónica</option>
+                        <option value="5">Ing. Mecatrónica</option>
+                        <option value="6">Ing. Logística</option>
+                        <option value="7">Ing. Bioquímica</option>
+                        <option value="8">Ing. Biomédica</option>
+                        <option value="9">Ing. Industrial</option>
+                        <option value="10">Ing. Gestión Empresarial</option>
+                        <option value="11">Lic. Administración de Empresas</option>
+                        <option value="12">Contador Público</option>
+                    </select>
+                    
                    </td>
                 </tr>
                 <tr>
@@ -69,8 +83,16 @@
                     <td><input type="checkbox"></td>
                 </tr>
             </table>
+            <br>
             <button type="submit" class="button">Guardar</button>
         </form>
+        </div>
         
+        <hr>
+        <br>
+        <form action="primero.html">
+            <button type="submit" class="button">Regresar</button>
+          </form>
+          
     </head>
 </html>
