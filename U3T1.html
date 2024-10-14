@@ -1,0 +1,108 @@
+<html>
+    <head>
+        <title>Tareas 1 2 3</title>
+        <link rel="stylesheet" type="text/css" href="styles.css">
+    </head>
+        <body>
+            <div class="fondo-blanco">
+            <h1>Generador de RFC</h1>
+            <center>
+                El Registro Federal de Contribuyentes, también conocido como número RFC, es una clave que requiere toda persona física o persona moral en México para realizar cualquier actividad económica lícita por la que esté obligada a pagar impuestos, con algunas excepciones.
+                <br>
+                <br>
+                <button onclick="generarRFC()">Generar RFC</button>
+            </center>
+            </div>
+            <hr>
+            <div class="fondo-blanco">
+                <h1>Formula General</h1>
+                Una fórmula general, es una expresión matemática formada por números e incógnitas que resolver. La resolución de la fórmula, permite obtener el valor de una incógnita en distintos casos. La fórmula general es una expresión matemática utilizada principalmente para la resolución de ecuaciones de segundo grado.
+                <br>
+                <br>
+                <center>Solo introduce los valores de "a", "b", y "c"</center>
+                 
+                <br>
+                <center><button onclick="formgeneral()">a,b,c</button>
+                </center>
+            </div>
+            <hr>
+            <div class="fondo-blanco">
+                <h1>Adivina el número</h1>
+
+                <center>
+                Para jugar "Adivina un número", solo tienes que escribir un número del 1 al 100.
+                <br>El juego te dirá si te pasaste o te falta. Sigue intentándolo hasta que adivines, y al final verás cuántos intentos hiciste. <br> ¡Es fácil y divertido!
+                <br>
+                <br>
+                </center>
+
+                <center>
+                    <button onclick="adivina()">Jugar</button>
+                </center>
+            </div>
+            <hr>
+        </body>
+
+</html>  
+<script>
+    function generarRFC(){
+        let nombre = prompt("Escriba su nombre").toUpperCase();
+        let apellidoP = prompt("Escriba su apellido paterno").toUpperCase();
+        let apellidoM = prompt("Escriba su apellido materno").toUpperCase();
+        let dia = parseInt(prompt("Escriba la dia de nacimiento"));
+        let mes = parseInt(prompt("Escriba el mes de nacimiento"));
+        let año = parseInt(prompt("Escriba el año de nacimiento"));
+        let RFC = apellidoP.substring(0,2);
+                RFC += apellidoM.substring(0,1);
+                RFC += nombre.substring(0,1);
+                RFC += año.substring(2, 4);
+                RFC += mes.padStart(2, '0');
+                RFC += dia.padStart(2, '0');  
+        alert("HOLA "+nombre+" "+apellidoP+" "+apellidoM+" TU RFC ES: "+ RFC);
+    }
+
+    function formgeneral(){
+        var a = parseInt(prompt("El valor de a es:"));
+        var b = parseInt(prompt("El valor de b es:"));
+        var c = parseInt(prompt("El valor de c es:"));
+
+        var e = (b * b);
+        var f = (4 * a * c);
+        var g = (2 * a);
+
+        var re1 = (e - f);
+
+        if (re1 > 0){
+            var re2 = Math.sqrt(re1);
+            var positivo = (1 * re2 - b);
+            var negativo = (-1 * re2 - b);
+
+            var x1 = (positivo / g);
+            var x2 = (negativo / g);
+            
+            alert(x1 +" " + "Y" + " " + x2);
+        } else {
+            alert("valores erroneos");
+        }
+    }
+    function adivina() {
+        let numeroAleatorio = Math.floor(Math.random() * 100) + 1;
+        let intentos = 0;
+        let adivinado = false;
+
+        while (!adivinado) {
+            let numeroUsuario = parseInt(prompt("Adivina un número entre 1 y 100:"));
+            intentos++;
+            if (numeroUsuario === numeroAleatorio) {
+                alert("¡Adivinaste!");
+                adivinado = true;
+            } else if (numeroUsuario > numeroAleatorio) {
+                alert("Te pasaste");
+            } else {
+                alert("Te falta");
+            }
+        }
+        alert("Número de intentos: " + intentos);
+    }
+    
+</script>

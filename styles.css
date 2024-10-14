@@ -1,69 +1,47 @@
 td img {
-    width: 150px;
-  }
-
+    width: 150px;  }
   /*primer estilo aplciado*/
-h1{
+  h1{
     color: #261da5;
     font-style: black;
     text-align: center;
     text-transform: uppercase; 
-    font-size: xx-large;
-}
+    font-size: xx-large;}
 /*segundo estilo aplicado*/
 h2{
     color: rgb(0, 0, 0);
     text-transform: uppercase;
-    font-size: x-large; 
-
-
-}
+    font-size: x-large;}
 /*tercer estilo aplicado*/
 h3{
     color: #00640d;
     font-style: italic;
     text-align: center;
     font-size: x-large;
-    letter-spacing: 10px;
-
-}
-
+    letter-spacing: 10px;}
 /*-----------------------------------------------------------------------------------------------------------------------------------*/
 /* Estilos Tablas */
 td {
   font-size: medium;
-  font-weight: normal;
-}
-
+  font-weight: normal;}
 #fomr, #form td {
   font-size: medium;
   font-weight: bold;
   text-transform: capitalize;
-  color:#585858;
-
-}
-
+  color:#585858;}
 #miTabla, #miTabla th, #miTabla td {
   border: 1px solid black;
   border-collapse: collapse;
-  font-size: large;
-  
-}
-
+  font-size: large;}
 #miTabla th:nth-child(even), #miTabla td:nth-child(even) {
   background-color: #bfbfbf65;
   font-style: italic;
-  font-weight: bold;
-}
-
-
+  font-weight: bold;}
 /*-----------------------------------------------------------------------------------------------------------------------------------*/
 /*Varios estilos*/
 #nuestro_estilo{
   color: #404040;
-  font-size: medium;
-
-}
+  font-size: medium;}
 /*Titulo enorme*/
 #mi_estilo{
     color: #000000;
@@ -72,56 +50,36 @@ td {
     text-transform: uppercase;
     font-weight: bold;
     font-size: xxx-large;
-    letter-spacing: 2px;   
-
-}
+    letter-spacing: 2px;}
 #estilo1{
   color: #000764;
   font-weight: normal;
     text-align: center;
     text-transform: uppercase;
-    letter-spacing: 8px;   
-
-
-    
-}
+    letter-spacing: 8px;}
 #estilo2{
   color: #404040;
   font-size: medium;
     font-style:normal ;
     text-align: left;
-    font-weight: bold;
-}
-
+    font-weight: bold;}
 hr herf{
-    color: rgb(0, 0, 0);
-
-}
-
+    color: rgb(0, 0, 0);}
 /*-----------------------------------------------------------------------------------------------------------------------------------*/
 /*estilos de el fondo*/
 body {
     background-color: #01007D; /* Color de fondo azul */
     color: black; /* Color del texto general */
-    font-family: Arial, sans-serif;
-}
-
+    font-family: Arial, sans-serif;}
 .fondo-blanco {
     background-color: white; /* Fondo blanco para el elemento */
     color: black; /* Color del texto dentro del elemento blanco */
     padding: 20px; /* Espaciado interno */
     border-radius: 8px; /* Bordes redondeados opcional */
-    margin: 20px; /* Margen externo opcional */
-}
-
-
+    margin: 20px; /* Margen externo opcional */}
 /*-----------------------------------------------------------------------------------------------------------------------------------*/
-
-
-
 /* estilo del photoslider */
 * {box-sizing:border-box}
-
 /* Slideshow container */
 .slideshow-container {
   max-width: 1000px;
@@ -214,33 +172,24 @@ body {
 #bg-face {
   width: 288px;
   height: 288px;
-  background: url("css_sprites.png") -10px -10px;
-  
-}
-  
+  background: url("css_sprites.png") -10px -10px;} 
 #bg-facec {
   width: 267px;
   height: 267px;
-  background: url("css_sprites.png") -10px -318px;
-}
-
+  background: url("css_sprites.png") -10px -318px;}
 #bg-ig {
   width: 266px;
   height: 266px;
-  background: url("css_sprites.png") -297px -318px;
-}
+  background: url("css_sprites.png") -297px -318px;}
 #bg-igc {
   width: 252px;
   height: 252px;
-  background: url("css_sprites.png") -616px -291px;
-}
+  background: url("css_sprites.png") -616px -291px;}
 #bg-yutu {
   width: 278px;
   height: 278px;
-  background: url("css_sprites.png") -318px -10px;
-}
+  background: url("css_sprites.png") -318px -10px;}
 #bg-yutuc {
   width: 261px;
   height: 261px;
-  background: url("css_sprites.png") -616px -10px;
-}
+  background: url("css_sprites.png") -616px -10px;}

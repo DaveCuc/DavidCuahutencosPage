@@ -1,0 +1,20 @@
+<html>
+    <head>
+        <title>RFC</title>
+    </head>
+        <body>
+            <script>
+                let nombre
+                let apellido
+                let fecha
+
+                nombre= prompt("Escriba su nombre");
+                apellido= prompt("Escriba su apellido");
+                fecha= prompt("Escriba su fecha de nacimiento");
+                document.write("Su nombre es: " + nombre + " " + apellido );
+
+
+            </script>
+        </body>
+
+</html>    
