@@ -43,7 +43,7 @@
             <hr>
             <br>
             <div class="fondo-blanco" align="center">
-                <form action="primero.html"><button type="submit" class="button"></button></form>
+                <form action="primero.html"><button type="submit" class="button">Regresar</button></form>
             </form>
             </div>
         </body>
@@ -54,15 +54,20 @@
         let nombre = prompt("Escriba su nombre").toUpperCase();
         let apellidoP = prompt("Escriba su apellido paterno").toUpperCase();
         let apellidoM = prompt("Escriba su apellido materno").toUpperCase();
-        let dia = parseInt(prompt("Escriba la dia de nacimiento"));
-        let mes = parseInt(prompt("Escriba el mes de nacimiento"));
-        let año = parseInt(prompt("Escriba el año de nacimiento"));
+        let dia = parseInt(prompt("Escriba la dia de nacimiento DD-##-####"));
+        let mes = parseInt(prompt("Escriba el mes de nacimiento ##-MM-####"));
+        let año = parseInt(prompt("Escriba el año de nacimiento ##-##-YYYY"));
+
+
+
+
         let RFC = apellidoP.substring(0,2);
                 RFC += apellidoM.substring(0,1);
                 RFC += nombre.substring(0,1);
-                RFC += año.substring(2, 4);
-                RFC += mes.padStart(2, '0');
-                RFC += dia.padStart(2, '0');  
+                RFC += año.toString().substring(2, 4);
+                RFC += mes.toString().padStart(2, '0');
+                RFC += dia.toString().padStart(2, '0');  
+
         alert("HOLA "+nombre+" "+apellidoP+" "+apellidoM+" TU RFC ES: "+ RFC);
     }
 
